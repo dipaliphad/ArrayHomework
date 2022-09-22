@@ -11,28 +11,51 @@ namespace ArrayHomework
         static void Main(string[] args)
         {
 
-            //maximum numbers of 2D array
-            int[,] arr = new int[3, 4]
-            {
-                {1,8,3,4},
-                {5,6,9,8},
-                {7,14,9,10},
-            };
-            
-            for(int i=0; i<arr.GetLength(0); i++)
-            {
-                int maxVal = arr[0,0];
+            //mimimum numbers from 2D array...
 
-                for(int j=0; j < arr.GetLength(1); j++)
-                {
-                    if (maxVal < arr[i, j])
-                    {
-                        maxVal = arr[i, j];
-                    }
-                }
+            //int[,] arr = new int[3, 4]
+            //{
+            //    {1,3,2,4},
+            //    {5,7,6,8},
+            //    {8,9,10,11},
+            //};
+
+            //for (int i=0; i<arr.GetLength(0); i++)
+            //{
+            //    int minVal= arr[i,0];
+            //    for (int j = 0; j < arr.GetLength(1); j++)
+
+            //        if (minVal > arr[i, j])
+            //        {
+            //            minVal = arr[i,j];
+            //        }
+            //    Console.WriteLine(minVal);
+            //    }
+            
+            //}
+
+            //maximum numbers of 2D array
+            //int[,] arr = new int[3, 4]
+            //{
+            //    {1,8,3,4},
+            //    {5,6,9,8},
+            //    {7,14,9,10},
+            //};
+            
+            //for(int i=0; i<arr.GetLength(0); i++)
+            //{
+            //    int maxVal = arr[0,0];
+
+            //    for(int j=0; j < arr.GetLength(1); j++)
+            //    {
+            //        if (maxVal < arr[i, j])
+            //        {
+            //            maxVal = arr[i, j];
+            //        }
+            //    }
                 
-                Console.WriteLine(maxVal);
-            }
+            //    Console.WriteLine(maxVal);
+            //}
             
             //duplicate Array....
 
@@ -101,7 +124,7 @@ namespace ArrayHomework
             //}
             //Console.WriteLine("maximum number is:" + max);
             //}
-        }
+        
     }
 }
     

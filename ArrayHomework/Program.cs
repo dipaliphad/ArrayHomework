@@ -31,7 +31,7 @@ namespace ArrayHomework
             //        }
             //    Console.WriteLine(minVal);
             //    }
-            
+
             //}
 
             //maximum numbers of 2D array
@@ -41,7 +41,7 @@ namespace ArrayHomework
             //    {5,6,9,8},
             //    {7,14,9,10},
             //};
-            
+
             //for(int i=0; i<arr.GetLength(0); i++)
             //{
             //    int maxVal = arr[0,0];
@@ -53,10 +53,10 @@ namespace ArrayHomework
             //            maxVal = arr[i, j];
             //        }
             //    }
-                
+
             //    Console.WriteLine(maxVal);
             //}
-            
+
             //duplicate Array....
 
             //int[] arr = { 1, 2, 3, 4, 1, 6, 3, 4 };
@@ -71,8 +71,22 @@ namespace ArrayHomework
             //}
 
 
-            //find Duplicate remove number....
-
+            //find Dupliplicate / remove element remove number....
+            int[] arr = new int[] { 22, 11, 45, 78, 13 };
+            int n = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] == n)
+                {
+                    arr[i] = 0;
+                    break;
+                }
+            }
+            foreach (var item in arr)
+            {
+                    Console.WriteLine(item);
+            }
+        }
             //    int i = 0, j = 0;
             //    int[] arr1 = new int[] { 1, 2, 3, 4, 2, 5 ,1};
 

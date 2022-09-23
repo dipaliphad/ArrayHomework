@@ -10,6 +10,32 @@ namespace ArrayHomework
     {
         static void Main(string[] args)
         {
+            //subarray sum method...
+            int[] arr = new int[] { 12, 5, 31, 9, 21, 8, 40, 5 };
+            int a = Convert.ToInt32(Console.ReadLine());
+            int sum = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum = arr[i];
+                for (int j = i + 1; j < arr.Length; j++)
+                {
+                    sum = sum + arr[j];
+                    if (sum == a)
+                    {
+                        for (int k = i; k <= j; k++)
+                        {
+                            Console.WriteLine(arr[k]);
+                        }
+                        Console.WriteLine();
+                    }
+                    else if (sum > a)
+                    {
+                        break;
+                    }
+                }
+
+            }
+        }
 
             //mimimum numbers from 2D array...
 
@@ -72,21 +98,21 @@ namespace ArrayHomework
 
 
             //find Dupliplicate / remove element remove number....
-            int[] arr = new int[] { 22, 11, 45, 78, 13 };
-            int n = Convert.ToInt32(Console.ReadLine());
-            for (int i = 0; i < arr.Length; i++)
-            {
-                if (arr[i] == n)
-                {
-                    arr[i] = 0;
-                    break;
-                }
-            }
-            foreach (var item in arr)
-            {
-                    Console.WriteLine(item);
-            }
-        }
+        //    int[] arr = new int[] { 22, 11, 45, 78, 13 };
+        //    int n = Convert.ToInt32(Console.ReadLine());
+        //    for (int i = 0; i < arr.Length; i++)
+        //    {
+        //        if (arr[i] == n)
+        //        {
+        //            arr[i] = 0;
+        //            break;
+        //        }
+        //    }
+        //    foreach (var item in arr)
+        //    {
+        //            Console.WriteLine(item);
+        //    }
+        //}
             //    int i = 0, j = 0;
             //    int[] arr1 = new int[] { 1, 2, 3, 4, 2, 5 ,1};
 
